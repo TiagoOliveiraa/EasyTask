@@ -1,27 +1,45 @@
-# Essentials
+# Angular Task Management Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## About the Project
+This project was developed as a learning experience with Angular 19. It is a simple task management application where tasks are assigned to users. Users can create new tasks and mark them as completed.
 
-## Development server
+## Features
+- Display tasks by user.
+- Create new tasks for a user.
+- Mark tasks as completed.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Future Plans
+- Create project groups and connect users to projects.
+- Add the option to create new users.
+- Define user roles (Collaborator, Project Manager).
+- Set task priority levels.
+- Store tasks in a database instead of local storage.
+- Implement user authentication (Login/Register).
 
-## Code scaffolding
+Currently, tasks are stored in local storage, but a future update will integrate a database for better persistence and scalability. Additionally, a login/register system will be implemented to manage user access and permissions.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Technologies Used
+- **Angular 19**
+- TypeScript
+- HTML & CSS
 
-## Build
+## Setup
+To run the project locally, follow these steps:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/your-repo.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd your-project-folder
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   ng serve
+   ```
+5. Open your browser and go to `http://localhost:4200/`
