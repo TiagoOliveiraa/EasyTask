@@ -1,10 +1,22 @@
 <app-card>
+  @if(taskEdit){
+    <app-edit-task (close)="onCloseEdit()" [task]="task"/>
+  }
   <article>
-    <h2>{{task.title}}</h2>
-    <time>{{task.dueDate | date: 'fullDate' }}</time>
-    <p>{{task.summary}}</p>
-    <p class="actions">
-      <button (click)="onCompleteTask()">Complete</button>
-    </p>
+    <div>
+      <div class="buttons-container">
+        <p class="edit">
+          <button (click)="onEditTask()" ><img src="../../../assets/edit-3-svgrepo-com.svg"></button>
+        </p>
+        <p class="actions">
+          <button (click)="onCompleteTask()">Complete</button>
+        </p>
+      </div>
+      <div class="info-container">
+        <h2>{{task.title}}</h2>
+        <time>{{task.dueDate | date: 'fullDate' }}</time>
+        <p>{{task.summary}}</p>
+      </div>
+    </div>
   </article>
 </app-card>

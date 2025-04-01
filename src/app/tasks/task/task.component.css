@@ -4,12 +4,45 @@ article {
   background-color: #bf9ee5;
 }
 
+article>div{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  min-height: 150px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
 h2 {
   margin: 0;
 }
 
 time {
   color: #3c2c50;
+}
+
+.edit img{
+  height: 20px;
+}
+
+.edit{
+  margin-top: 0;
+}
+
+.edit button {
+  background-color: #380774;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  border: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  align-self: end;
 }
 
 .actions {
@@ -31,7 +64,9 @@ time {
 }
 
 .actions button:hover,
-.actions button:active {
+.actions button:active,
+.edit button:hover,
+.edit button:active {
   background-color: #4a0774;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
 }
